@@ -2,6 +2,7 @@
 CHANGELOG:
 
 V1: First Release! Download and enjoy.
+
 V1.1: Added new colors and a new death message with a new win system. Winning will not close your game. New coins system as well.
 --------------------------------------
 **REQUIREMENTS**:
