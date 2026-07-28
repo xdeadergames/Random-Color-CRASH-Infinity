@@ -6,10 +6,10 @@ import pickle
 color=["Red","Yellow","Green","Blue","Orange","Purple","Aqua","Lime","White","Light Blue"]
 while True:
     colors=random.choice(color)
-    with open("coins.dat", "wb") as file:
-        pickle.dump(coins, file)
-    with open("coins.dat", "rb") as file:
-        coins = pickle.load(file)
+    with open("coins.dat", "w") as file:
+        file.write(str(coins))
+    with open("coins.dat", "r") as file:
+        coins = int(file.read())
     predict=input("Predict the next color. ")
     if predict == colors:
         print("Good Job!")
